@@ -2,6 +2,7 @@
 import linkedinLogo from "./assets/linkedin.png"
 import githubLogo from "./assets/github.png"
 import gfgLogo from "./assets/gfg.png"
+import myImage from "./assets/my-image.png"
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
             <ul className="flex flex-row gap-12">
               <li className="nav-item hover:border-b-2 border- hover:border-yellow-500"><a href="#home-section" className="nav-link"><span>Home</span></a></li>
               <li className="nav-item hover:border-b-2 border- hover:border-yellow-500"><a href="#about-section" className="nav-link"><span>About</span></a></li>
-              <li className="nav-item hover:border-b-2 border- hover:border-yellow-500"><a href="#resume-section" className="nav-link"><span>Resume</span></a></li>
+              <li className="nav-item hover:border-b-2 border- hover:border-yellow-500"><a href="#resume-section" className="nav-link"><span>Academics</span></a></li>
               <li className="nav-item hover:border-b-2 border- hover:border-yellow-500"><a href="#skills-section" className="nav-link"><span>Skills</span></a></li>
               <li className="nav-item hover:border-b-2 border- hover:border-yellow-500"><a href="#projects-section" className="nav-link"><span>Projects</span></a></li>
               <li className="nav-item hover:border-b-2 border- hover:border-yellow-500"><a href="#contact-section" className="nav-link"><span>Contact</span></a></li>
@@ -23,10 +24,58 @@ function App() {
         </nav>
       </header>
 
-      <main id="main" className="mt-96">
-        <div>
-          <h1>This is main content</h1>
-          <button className="px-6 py-3 bg-yellow-500 text-black hover:bg-yellow-500/80">Click Me!</button>
+      <main id="main" className="mt-8">
+        <div id="home"></div>
+        <div id="about"></div>
+        <div id="academics"></div>
+        <div id="skills"></div>
+        <div id="projects"></div>
+
+        <div id="contact" className="flex flex-col">
+          <h1 className="text-center font-semibold text-3xl">Contact Me</h1>
+          <div id="contact-details" className="flex flex-row gap-16">
+            <span id="address">
+              <img id="address-logo" />
+              <h2>Addres</h2>
+              <p>
+                Near Sai Baba temple,
+                 Shirdi, Ahmednagar, 
+                 Maharashtra, India
+              </p>
+            </span>
+            <span id="mobile-number">
+              <img id="mobile-number-logo" />
+              <h2>Contact Number</h2>
+              <p>+91 9022859455</p>
+            </span>
+            <span id="email">
+              <img id="email-logo" />
+              <h2>Email Address</h2>
+              <p>tajansari612@gmail.com</p>
+            </span>
+            <span id="website">
+              <img id="website-logo" />
+              <h2>Website</h2>
+              <p>tajansari612.com</p>
+            </span>
+          </div>
+
+          <div id="form-section" className="flex flex-row">
+            <div id="form-img" className="bg-[#1e1e1e] w-1/2">
+              <img src={myImage} alt="" />
+            </div>
+            <div id="contact-form" className="w-1/2 bg-gray-100">
+              <form>
+                <div id="form" className="flex flex-col gap-4 p-14">
+                  <input type="text" id="name" className="px-3 py-4 text-black/90 rounded border border-gray-300 outline-gray-700 outline-1" placeholder="Your Name" />
+                  <input type="email" id="email" className="px-3 py-4 text-black/90 rounded border border-gray-300 outline-gray-700 outline-1" placeholder="Your Email" />
+                  <input type="text" id="subject" className="px-3 py-4 text-black/90 rounded border border-gray-300 outline-gray-700 outline-1" placeholder="Subject" />
+                  <textarea id="message" className="px-3 py-4 text-black/90 rounded border border-gray-300 outline-gray-700 outline-1" rows="10" placeholder="Message"></textarea>
+                  <span><button className="text-black/90 font-medium text-sm bg-yellow-400/80 py-4 px-10 rounded-full" type="submit">Send Message</button></span>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </main>
 
@@ -37,7 +86,7 @@ function App() {
               <h2 className="text-2xl font-semibold mb-8">About</h2>
               <p className="leading-loose text-white/60">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                 there live the blind texts.</p>
-                
+
               <ul className="mt-6 flex flex-row gap-4">
                 <li className="icon-linkedin">
                   <a href="https://www.linkedin.com/in/tajansari612/" target="_blank">
@@ -82,7 +131,7 @@ function App() {
               </div>
             </div>
           </div>
-          
+
           <div id="copyright" className="mt-16">
             <div className="col-md-12 text-center text-xs font-extralight text-white/30">
               <p>
