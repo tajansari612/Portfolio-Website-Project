@@ -3,6 +3,10 @@ import linkedinLogo from "./assets/linkedin.png"
 import githubLogo from "./assets/github.png"
 import gfgLogo from "./assets/gfg.png"
 import myImage from "./assets/my-image.png"
+import addressLogo from "./assets/home-address.png"
+import phoneLogo from "./assets/phone.png"
+import emailLogo from "./assets/sent.png"
+import websiteLogo from "./assets/earth-grid.png"
 
 function App() {
 
@@ -32,31 +36,35 @@ function App() {
         <div id="projects"></div>
 
         <div id="contact" className="flex flex-col">
-          <h1 className="text-center font-semibold text-3xl">Contact Me</h1>
-          <div id="contact-details" className="flex flex-row gap-16">
-            <span id="address">
-              <img id="address-logo" />
-              <h2>Addres</h2>
-              <p>
-                Near Sai Baba temple,
-                 Shirdi, Ahmednagar, 
-                 Maharashtra, India
+          <h1 className="text-center font-bold mb-6 text-5xl">Contact Me</h1>
+          <h2 className="text-center font-black text-8xl -translate-y-16 text-white/10">Contact</h2>
+          <div id="contact-details" className="flex flex-row gap-16 mb-24">
+            <span id="address" className="w-1/5 text-center flex flex-col gap-5 justify-start items-center">
+              <img id="address-logo" className="translate-x-3" src={addressLogo} width="64px" />
+              <h2 className="text-xl font-semibold mt-1">ADDRESS</h2>
+              <p className="leading-relaxed text-white/60">
+                Near Sai Baba temple, Shirdi, 
+                Ahmednagar, Maharashtra,
+                India
               </p>
             </span>
-            <span id="mobile-number">
-              <img id="mobile-number-logo" />
-              <h2>Contact Number</h2>
-              <p>+91 9022859455</p>
+
+            <span id="mobile-number" className="w-1/5 text-center flex flex-col gap-5 justify-start items-center">
+              <img id="mobile-number-logo" src={phoneLogo} width="64px"/>
+              <h2 className="text-xl font-semibold mt-1">CONTACT NUMBER</h2>
+              <p className="leading-relaxed text-white/60">+91 9022859455</p>
             </span>
-            <span id="email">
-              <img id="email-logo" />
-              <h2>Email Address</h2>
-              <p>tajansari612@gmail.com</p>
+
+            <span id="email" className="w-1/5 text-center flex flex-col gap-5 justify-start items-center">
+              <img id="email-logo" src={emailLogo} width="64px"/>
+              <h2 className="text-xl font-semibold mt-1">Email Address</h2>
+              <p className="leading-relaxed text-white/60">tajansari612@gmail.com</p>
             </span>
-            <span id="website">
-              <img id="website-logo" />
-              <h2>Website</h2>
-              <p>tajansari612.com</p>
+
+            <span id="website" className="w-1/5 text-center flex flex-col gap-5 justify-start items-center">
+              <img id="website-logo" src={websiteLogo} width="64px"/>
+              <h2 className="text-xl font-semibold mt-1">Website</h2>
+              <p className="leading-relaxed text-white/60">tajansari612.com</p>
             </span>
           </div>
 
@@ -132,7 +140,7 @@ function App() {
             </div>
           </div>
 
-          <div id="copyright" className="mt-16">
+          <div id="copyright" className="my-16">
             <div className="col-md-12 text-center text-xs font-extralight text-white/30">
               <p>
                 Copyright &copy;
