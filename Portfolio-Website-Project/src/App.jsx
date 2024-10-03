@@ -32,8 +32,129 @@ function App() {
         <div id="home"></div>
         <div id="about"></div>
         <div id="academics"></div>
-        <div id="skills"></div>
-        <div id="projects"></div>
+
+        <div id="skills" className="w-full mb-40">
+          <h1 className="text-center font-bold mb-6 text-5xl">My Skills</h1>
+          <h2 className="text-center font-black text-8xl -translate-y-16 text-white/10">Skills</h2>
+          <div id="skills-box" className="grid grid-cols-2 gap-6">
+
+            <div id="cpp" className="w-full">
+              <div className="w-4/5 flex flex-row justify-between">
+                <span className="text-white/80 mb-2 text-xl font-medium">C++</span>
+                <span className="text-white/80 mb-2 text-xl font-medium">80%</span>
+              </div>
+              <div id="progress" className="w-full h-3 rounded-lg bg-white/10">
+                <div id="clr" className="bg-yellow-400 w-4/5 h-full rounded-md"></div>
+              </div>
+            </div>
+
+            <div id="dsa" className="w-full">
+              <div className="w-2/3 flex flex-row justify-between">
+                <span className="text-white/80 mb-2 text-xl font-medium">DSA</span>
+                <span className="text-white/80 mb-2 text-xl font-medium">66%</span>
+              </div>
+              <div id="progress" className="w-full h-3 rounded-lg bg-white/10">
+                <div id="clr" className="bg-yellow-400 w-2/3 h-full rounded-md"></div>
+              </div>
+            </div>
+
+            <div id="html" className="w-full">
+              <div className="w-4/5 flex flex-row justify-between">
+                <span className="text-white/80 mb-2 text-xl font-medium">HTML</span>
+                <span className="text-white/80 mb-2 text-xl font-medium">80%</span>
+              </div>
+              <div id="progress" className="w-full h-3 rounded-lg bg-white/10">
+                <div id="clr" className="bg-yellow-400 w-4/5 h-full rounded-md"></div>
+              </div>
+            </div>
+
+            <div id="css" className="w-full">
+              <div className="w-3/4 flex flex-row justify-between">
+                <span className="text-white/80 mb-2 text-xl font-medium">CSS</span>
+                <span className="text-white/80 mb-2 text-xl font-medium">75%</span>
+              </div>
+              <div id="progress" className="w-full h-3 rounded-lg bg-white/10">
+                <div id="clr" className="bg-yellow-400 w-3/4 h-full rounded-md"></div>
+              </div>
+            </div>
+
+            <div id="javascript" className="w-full">
+              <div className="w-4/5 flex flex-row justify-between">
+                <span className="text-white/80 mb-2 text-xl font-medium">Javascript</span>
+                <span className="text-white/80 mb-2 text-xl font-medium">80%</span>
+              </div>
+              <div id="progress" className="w-full h-3 rounded-lg bg-white/10">
+                <div id="clr" className="bg-yellow-400 w-4/5 h-full rounded-md"></div>
+              </div>
+            </div>
+
+            <div id="react" className="w-full">
+              <div className="w-3/5 flex flex-row justify-between">
+                <span className="text-white/80 mb-2 text-xl font-medium">React</span>
+                <span className="text-white/80 mb-2 text-xl font-medium">60%</span>
+              </div>
+              <div id="progress" className="w-full h-3 rounded-lg bg-white/10">
+                <div id="clr" className="bg-yellow-400 w-3/5 h-full rounded-md"></div>
+              </div>
+            </div>
+
+            <div id="mysql" className="w-full">
+              <div className="w-3/4 flex flex-row justify-between">
+                <span className="text-white/80 mb-2 text-xl font-medium">MySQL</span>
+                <span className="text-white/80 mb-2 text-xl font-medium">75%</span>
+              </div>
+              <div id="progress" className="w-full h-3 rounded-lg bg-white/10">
+                <div id="clr" className="bg-yellow-400 w-3/4 h-full rounded-md"></div>
+              </div>
+            </div>
+
+            <div id="mongodb" className="w-full">
+              <div className="w-1/5 flex flex-row justify-between">
+                <span className="text-white/80 mb-2 text-xl font-medium">MongoDB</span>
+                <span className="text-white/80 mb-2 text-xl font-medium">10%</span>
+              </div>
+              <div id="progress" className="w-full h-3 rounded-lg bg-white/10">
+                <div id="clr" className="bg-yellow-400 w-1/5 h-full rounded-md"></div>
+              </div>
+            </div>
+
+            <div id="python" className="w-full">
+              <div className="w-2/5 flex flex-row justify-between">
+                <span className="text-white/80 mb-2 text-xl font-medium">Python</span>
+                <span className="text-white/80 mb-2 text-xl font-medium">40%</span>
+              </div>
+              <div id="progress" className="w-full h-3 rounded-lg bg-white/10">
+                <div id="clr" className="bg-yellow-400 w-2/5 h-full rounded-md"></div>
+              </div>
+            </div>
+
+            <div id="nodejs" className="w-full">
+              <div className="w-3/5 flex flex-row justify-between">
+                <span className="text-white/80 mb-2 text-xl font-medium">NodeJs</span>
+                <span className="text-white/80 mb-2 text-xl font-medium">60%</span>
+              </div>
+              <div id="progress" className="w-full h-3 rounded-lg bg-white/10">
+                <div id="clr" className="bg-yellow-400 w-3/5 h-full rounded-md"></div>
+              </div>
+            </div>
+
+            <div id="express" className="w-full">
+              <div className="w-3/5 flex flex-row justify-between">
+                <span className="text-white/80 mb-2 text-xl font-medium">Express</span>
+                <span className="text-white/80 mb-2 text-xl font-medium">60%</span>
+              </div>
+              <div id="progress" className="w-full h-3 rounded-lg bg-white/10">
+                <div id="clr" className="bg-yellow-400 w-3/5 h-full rounded-md"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="projects">
+          <h1 className="text-center font-bold mb-6 text-5xl">My Projects</h1>
+          <h2 className="text-center font-black text-8xl -translate-y-16 text-white/10">Projects</h2>
+        </div>
 
         <div id="contact" className="flex flex-col">
           <h1 className="text-center font-bold mb-6 text-5xl">Contact Me</h1>
@@ -43,26 +164,26 @@ function App() {
               <img id="address-logo" className="translate-x-3" src={addressLogo} width="64px" />
               <h2 className="text-xl font-semibold mt-1">ADDRESS</h2>
               <p className="leading-relaxed text-white/60">
-                Near Sai Baba temple, Shirdi, 
+                Near Sai Baba temple, Shirdi,
                 Ahmednagar, Maharashtra,
                 India
               </p>
             </span>
 
             <span id="mobile-number" className="w-1/5 text-center flex flex-col gap-5 justify-start items-center">
-              <img id="mobile-number-logo" src={phoneLogo} width="64px"/>
+              <img id="mobile-number-logo" src={phoneLogo} width="64px" />
               <h2 className="text-xl font-semibold mt-1">CONTACT NUMBER</h2>
               <p className="leading-relaxed text-white/60">+91 9022859455</p>
             </span>
 
             <span id="email" className="w-1/5 text-center flex flex-col gap-5 justify-start items-center">
-              <img id="email-logo" src={emailLogo} width="64px"/>
+              <img id="email-logo" src={emailLogo} width="64px" />
               <h2 className="text-xl font-semibold mt-1">Email Address</h2>
               <p className="leading-relaxed text-white/60">tajansari612@gmail.com</p>
             </span>
 
             <span id="website" className="w-1/5 text-center flex flex-col gap-5 justify-start items-center">
-              <img id="website-logo" src={websiteLogo} width="64px"/>
+              <img id="website-logo" src={websiteLogo} width="64px" />
               <h2 className="text-xl font-semibold mt-1">Website</h2>
               <p className="leading-relaxed text-white/60">tajansari612.com</p>
             </span>
