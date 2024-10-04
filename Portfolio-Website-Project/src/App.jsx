@@ -31,7 +31,23 @@ function App() {
       <main id="main" className="mt-8">
         <div id="home"></div>
         <div id="about"></div>
-        <div id="academics"></div>
+        <div id="education">
+          <h1 className="text-center font-bold mb-6 text-5xl">Education</h1>
+          <h2 className="text-center font-black text-8xl -translate-y-16 text-white/10">Education</h2>
+          <div id="education-box">
+            <div id="be">
+              <h1>2020-2024</h1>
+              <h2>Bachelore of Engineering</h2>
+              <h3>Savitribai Phule Pune University</h3>
+            </div>
+            <div id="hsc">
+
+            </div>
+            <div id="ssc">
+
+            </div>
+          </div>
+        </div>
 
         <div id="skills" className="w-full mb-40">
           <h1 className="text-center font-bold mb-6 text-5xl">My Skills</h1>
@@ -151,12 +167,77 @@ function App() {
 
         </div>
 
-        <div id="projects">
+        <div id="projects" className="mb-40">
           <h1 className="text-center font-bold mb-6 text-5xl">My Projects</h1>
           <h2 className="text-center font-black text-8xl -translate-y-16 text-white/10">Projects</h2>
+          <div id="project-box" className="grid grid-cols-2 gap-8 mt-6">
+
+            <div id="hindi-chatbot" className="px-8 py-10 bg-white/10 rounded-md">
+              <div className="flex flex-row justify-between mb-6">
+                <h1 className="inline text-yellow-400 text-2xl font-bold">Hindi Chatbot</h1>
+                <h2 className="inline">Sep 23</h2>
+              </div>
+              <ul className="flex flex-col gap-2 leading-loose text-white/60">
+                <li>
+                  Developed an AI-powered chatbot in Hindi, leveraging the Rasa
+                  framework and Python. The Chabot Uses NLU and generation capabilities
+                  to provide intelligent responses.
+                </li>
+                <li>
+                  Successfully integrated MySQL as the database backend, enabling
+                  efficient data retrieval and management
+                </li>
+                <li className="text-white font-medium">
+                  Technologies used: <span className="font-base text-white/60">Python, NLU, Rasa Framework, MySQL</span>
+                </li>
+              </ul>
+            </div>
+
+            <div id="portfolio-website" className="px-8 py-10 bg-white/10 rounded-md">
+              <div className="flex flex-row justify-between mb-6">
+                <h1 className="inline text-yellow-400 text-2xl font-bold">Portfolio Website</h1>
+                <h2 className="inline">Feb 24</h2>
+              </div>
+              <ul className="flex flex-col gap-2 leading-loose text-white/60">
+                <li>
+                  Created a comprehensive personal portfolio using React, HTML, CSS, and JavaScript, featuring
+                  sections for Skills, About Me, Projects, and Contact Me.
+                </li>
+                <li>
+                  Designed a responsive and visually appealing interface to effectively showcase expertise and work.
+                </li>
+                <li>
+                  Ensured smooth functionality and cross-device compatibility for an optimal viewing experience.
+                </li>
+                <li className="text-white font-medium">
+                  Technologies used: <span className="font-base text-white/60">HTML, Tailwind CSS, ReactJs, Javascript</span>
+                </li>
+              </ul>
+            </div>
+
+            <div id="currency-exchange-browser-extension" className="px-8 py-10 bg-white/10 rounded-md">
+              <div className="flex flex-row justify-between mb-6">
+                <h1 className="inline text-yellow-400 text-2xl font-bold">Currency Exchange Browser Extension</h1>
+                <h2 className="inline text-nowrap">Dec 23</h2>
+              </div>
+              <ul className="flex flex-col gap-2 leading-loose text-white/60">
+                <li>
+                  Utilized the Currency Exchange RapidAPI to access currency exchange rates. Enabled users to
+                  Convert between a wide range of currencies, catering to diverse international audiences.
+                </li>
+                <li>
+                  Implemented robust error handling to ensure the application gracefully handles scenarios such as
+                  invalid inputs or API errors.
+                </li>
+                <li className="text-white font-medium">
+                  Technologies used: <span className="font-base text-white/60"> JavaScript, RapidAPI, HTML, CSS</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div id="contact" className="flex flex-col">
+        <div id="contact" className="flex flex-col mb-12">
           <h1 className="text-center font-bold mb-6 text-5xl">Contact Me</h1>
           <h2 className="text-center font-black text-8xl -translate-y-16 text-white/10">Contact</h2>
           <div id="contact-details" className="flex flex-row gap-16 mb-24">
