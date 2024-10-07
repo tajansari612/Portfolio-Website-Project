@@ -29,10 +29,19 @@ function App() {
       </header>
 
       <main id="main" className="mt-8">
-        <div id="home"></div>
+        <div id="home" className="flex flex-row">
+          <div id="left" className="w-1/2 flex gap-4 flex-col pt-10 tracking-wider">
+            <h2 className="text-lg text-yellow-400 tracking-widest">HELLO!</h2>
+            <h1 className="text-6xl font-bold leading-[80px]">I am <span className="text-yellow-500">Taj Mohammad Ansari</span></h1>
+            <h3 className="text-3xl font-medium">A Full Stack Web Developer</h3>
+          </div>
+          <div id="right" className="w-1/2 opacity-70 -translate-y-24">
+            <img src={myImage} alt="" />
+          </div>
+        </div>
 
         <div id="about" className="mb-40 flex flex-row gap-8">
-          <div id="about-img" className="w-1/2">
+          <div id="about-img" className="w-1/2 opacity-70">
             <img src={myImage} />
           </div>
           <div id="about-section" className="w-1/2 pt-24">
