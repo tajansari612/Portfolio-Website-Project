@@ -30,7 +30,25 @@ function App() {
 
       <main id="main" className="mt-8">
         <div id="home"></div>
-        <div id="about"></div>
+
+        <div id="about" className="mb-40 flex flex-row gap-8">
+          <div id="about-img" className="w-1/2">
+            <img src={myImage} />
+          </div>
+          <div id="about-section" className="w-1/2 pt-24">
+            <h1 className="text-left font-bold mb-4 text-5xl translate-x-6">About Me</h1>
+            <h2 className="text-left font-black text-8xl -translate-y-16 text-white/10">About</h2>
+            <ul id="about-info" className="flex flex-col gap-4 w-full mb-14">
+              <li className="tracking-wide flex"><span className="font-semibold w-36">Name:</span>          <span className="text-white/60"> Taj Mohammad Ansari</span></li>
+              <li className="tracking-wide flex"><span className="font-semibold w-36">Date of Birth:</span> <span className="text-white/60"> 06-12-2000</span></li>
+              <li className="tracking-wide flex"><span className="font-semibold w-36">Address:</span>       <span className="text-white/60"> Shirdi, Ahmednagar, Maharashtra, India</span></li>
+              <li className="tracking-wide flex"><span className="font-semibold w-36">Zipcode: </span>      <span className="text-white/60"> 423109</span></li>
+              <li className="tracking-wide flex"><span className="font-semibold w-36">Email:</span>         <span className="text-white/60"> tajansari612@gmail.com</span></li>
+              <li className="tracking-wide flex"><span className="font-semibold w-36">Mobile No:</span>     <span className="text-white/60"> +91 9022859455</span></li>
+            </ul>
+            <button className="bg-yellow-400 text-black text-sm font-medium px-4 py-4 rounded-full">DOWNLOAD RESUME</button>
+          </div>
+        </div>
 
         <div id="education" className="mb-40">
           <h1 className="text-center font-bold mb-6 text-5xl">Education</h1>
