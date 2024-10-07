@@ -12,7 +12,7 @@ function App() {
 
   return (
     <section id="body" className="px-24 bg-black text-white font-Poppins transition-all duration-1000">
-      <header id="header" className="">
+      <header id="header" className="z-20 relative">
         <nav id="navbar" className="py-6">
           <div className="container flex flex-row justify-between">
             <a className="navbar-brand font-bold text-xl" href="index.html">Taj<span className="text-yellow-400">.</span>Ansari</a>
@@ -28,7 +28,7 @@ function App() {
         </nav>
       </header>
 
-      <main id="main" className="mt-8">
+      <main id="main" className="mt-8 z-10 relative">
         <div id="home" className="flex flex-row">
           <div id="left" className="w-1/2 flex gap-4 flex-col pt-10 tracking-wider">
             <h2 className="text-lg text-yellow-400 tracking-widest">HELLO!</h2>
