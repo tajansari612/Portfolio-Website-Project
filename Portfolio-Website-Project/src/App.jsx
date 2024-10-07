@@ -19,7 +19,7 @@ function App() {
             <ul className="flex flex-row gap-12">
               <li className="nav-item hover:border-b-2 border- hover:border-yellow-500"><a href="#home-section" className="nav-link"><span>Home</span></a></li>
               <li className="nav-item hover:border-b-2 border- hover:border-yellow-500"><a href="#about-section" className="nav-link"><span>About</span></a></li>
-              <li className="nav-item hover:border-b-2 border- hover:border-yellow-500"><a href="#resume-section" className="nav-link"><span>Academics</span></a></li>
+              <li className="nav-item hover:border-b-2 border- hover:border-yellow-500"><a href="#resume-section" className="nav-link"><span>Education</span></a></li>
               <li className="nav-item hover:border-b-2 border- hover:border-yellow-500"><a href="#skills-section" className="nav-link"><span>Skills</span></a></li>
               <li className="nav-item hover:border-b-2 border- hover:border-yellow-500"><a href="#projects-section" className="nav-link"><span>Projects</span></a></li>
               <li className="nav-item hover:border-b-2 border- hover:border-yellow-500"><a href="#contact-section" className="nav-link"><span>Contact</span></a></li>
@@ -31,21 +31,33 @@ function App() {
       <main id="main" className="mt-8">
         <div id="home"></div>
         <div id="about"></div>
-        <div id="education">
+
+        <div id="education" className="mb-40">
           <h1 className="text-center font-bold mb-6 text-5xl">Education</h1>
           <h2 className="text-center font-black text-8xl -translate-y-16 text-white/10">Education</h2>
-          <div id="education-box">
-            <div id="be">
-              <h1>2020-2024</h1>
-              <h2>Bachelore of Engineering</h2>
-              <h3>Savitribai Phule Pune University</h3>
-            </div>
-            <div id="hsc">
+          <div id="education-box" className="flex flex-row justify-between">
 
+            <div id="be" className="bg-white/10 px-6 py-8 rounded-md leading-loose">
+              <h1 className="text-yellow-300 text-3xl font-bold mb-3">2020-2024</h1>
+              <h2 className="text-3xl mb-3">Bachelore of Engineering</h2>
+              <h3 className="text-white/60 mb-3">SAVITRIBAI PHULE PUNE UNIVERSITY</h3>
+              <h4 className="text-2xl font-semibold">CGPA: 7.56</h4>
             </div>
-            <div id="ssc">
 
+            <div id="hsc" className="bg-white/10 px-6 py-8 rounded-md leading-loose">
+              <h1 className="text-yellow-300 text-3xl font-bold mb-3">2019-2020</h1>
+              <h2 className="text-3xl mb-3">12th</h2>
+              <h3 className="text-white/60 mb-3">Maharashtra State Board</h3>
+              <h4 className="text-2xl font-semibold">Percentage: 83.69</h4>
             </div>
+
+            <div id="ssc" className="bg-white/10 px-6 py-8 rounded-md leading-loose">
+              <h1 className="text-yellow-300 text-3xl font-bold mb-3">2017-2018</h1>
+              <h2 className="text-3xl mb-3">10th</h2>
+              <h3 className="text-white/60 mb-3">Maharashtra State Board</h3>
+              <h4 className="text-2xl font-semibold">Percentage: 95.20</h4>
+            </div>
+
           </div>
         </div>
 
